@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sport-app/static/css/main.46270e7a.css",
+    "main.js": "/sport-app/static/js/main.068bbf9a.js",
+    "static/js/453.ca9613ce.chunk.js": "/sport-app/static/js/453.ca9613ce.chunk.js",
+    "index.html": "/sport-app/index.html",
+    "main.46270e7a.css.map": "/sport-app/static/css/main.46270e7a.css.map",
+    "main.068bbf9a.js.map": "/sport-app/static/js/main.068bbf9a.js.map",
+    "453.ca9613ce.chunk.js.map": "/sport-app/static/js/453.ca9613ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46270e7a.css",
+    "static/js/main.068bbf9a.js"
+  ]
+}
