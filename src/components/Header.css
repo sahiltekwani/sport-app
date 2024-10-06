@@ -1,0 +1,181 @@
+/* General Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 15px 20px;
+  color: #ffffff;
+  transition: padding 0.3s ease;
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header.minimized {
+  padding: 5px 20px;
+}
+
+/* Left Section (Profile and Points) */
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__left .points {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.avatar-minimized {
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle-btn,
+.search-toggle-btn {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Menu Styling */
+.menu {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  width: 200px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.menu.open {
+  max-height: 300px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-options {
+  padding: 15px 20px;
+  border-bottom: 1px solid #444;
+  transition: background-color 0.3s;
+}
+
+.menu-options a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-options:hover {
+  background-color: #555;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  max-width: 0;
+}
+
+.search-bar.open {
+  max-width: 300px;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-results {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.search-result {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.search-result:hover {
+  background-color: #f0f0f0;
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1e1e1e;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.bottom-nav.hidden {
+  transform: translateY(100%);
+}
+
+.bottom-nav.visible {
+  transform: translateY(0);
+}
+
+/* Profile Animation for Scroll */
+.profile {
+  transition: transform 0.3s ease;
+}
+
+.profile.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header__left .points {
+    font-size: 1rem;
+  }
+
+  .menu {
+    width: 100%;
+    right: 0;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+}

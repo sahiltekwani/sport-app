@@ -1,0 +1,12 @@
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: #1e1e1e; 
+  color: white; 
+  transition: transform 0.3s ease; 
+}
+
+.bottom-nav.hidden {
+  transform: translateY(100%); 
+} 

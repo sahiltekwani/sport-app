@@ -1,0 +1,182 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.area4 {
+  overflow-y: scroll;
+  flex-grow: 1;
+  position: relative;
+  background-color: black;
+  height: fit-content;
+}
+
+.content {
+  padding: 20px;
+}
+
+
+.area4::-webkit-scrollbar {
+  width: 12px;
+}
+
+.area4::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.area4::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.all-matches {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  gap: 20px; 
+}
+
+
+@media (max-width: 1024px) {
+  .content {
+    padding: 15px;
+  }
+
+  .all-matches {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .all-matches {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .area4 {
+    padding: 10px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .all-matches {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    padding: 5px;
+  }
+
+  .App-header {
+    font-size: calc(8px + 2vmin);
+  }
+
+  .App-logo {
+    height: 30vmin;
+  }
+
+  .area4 {
+    padding: 5px;
+  }
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: #555; 
+}
+
+.button-group button.active {
+  background-color: #0fe533; 
+  color: black;
+  font-weight: bold;
+  transform: scale(1.05); 
+}
+
+
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column; 
+    margin-bottom: 15px;
+  }
+
+  .button-group button {
+    margin: 10px 0;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-group button {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+}

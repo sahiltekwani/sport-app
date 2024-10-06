@@ -1,0 +1,57 @@
+/* MatchArea.css */
+
+.match-area {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto; /* Allow scrolling if content exceeds the view */
+    background-color: #2c2c2e; /* Dark background for the match area */
+    height: calc(100vh - 100px); /* Adjust based on header and bottom nav height */
+  }
+  
+  .match-card {
+    background-color: #3a3a3c; /* Match card background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Space inside the card */
+    margin-bottom: 15px; /* Space between cards */
+    display: flex; /* Flexbox layout for teams */
+    justify-content: space-between; /* Space teams apart */
+    align-items: center; /* Center content vertically */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animation for hover */
+  }
+  
+  .match-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  }
+  
+  .team-logo {
+    width: 40px; /* Logo size */
+    height: 40px; /* Logo size */
+    border-radius: 50%; /* Circular logos */
+  }
+  
+  .match-details {
+    flex: 1; /* Take up remaining space */
+    text-align: center; /* Center the match details */
+  }
+  
+  .match-time {
+    font-weight: bold; /* Bold time text */
+    color: #ffffff; /* White text color */
+  }
+  
+  .join-game-button {
+    background-color: #4caf50; /* Green background for button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded button */
+    padding: 10px 15px; /* Padding for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.2s ease; /* Button hover animation */
+  }
+  
+  .join-game-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
